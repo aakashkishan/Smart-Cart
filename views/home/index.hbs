@@ -1,0 +1,38 @@
+{{!--Including the Header Partial--}}
+{{> header }}
+
+<h1>{{title}}</h1>
+<div class="container">
+    <table class="table table-stripped">
+        <thead>
+            <tr>
+                <th>Serial No. </th>
+                <th>Image</th>
+                <th>Item-Name</th>
+                <th>Expiry-Date</th>
+                <th>Purchase-Quantity</th>
+                <th>Item-Price</th>
+                <th>Purchase</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each items}}
+            <tr>
+                <td>{{@index}}</td>
+                <td><img src="{{imageURL}}" style="max-height: 50px;"></td>
+                <td><h4>{{name}}</h4></td>
+                <td><h4>{{expiry_date}}</h4></td>
+                <td><h4>{{purchase_quantity}}</h4></td>
+                <td><h4>{{item_price}} Rupees. / {{quantity_type}}</h4></td>
+                <td><a class="btn btn-success" href="admin/purchase/{{id}}">BUY</a></td>            
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+
+    <div class="pull-right">
+        <a class="btn btn-primary" href="/admin/bill/">Proceed to Billing</a>
+    </div>
+
+</div>
+

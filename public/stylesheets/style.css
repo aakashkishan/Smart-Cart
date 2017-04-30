@@ -1,0 +1,113 @@
+/*Login Page Styling*/
+.avatar {
+  max-height: 300px;
+}
+
+
+/*General Styling*/
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #24292E;
+  color: #33CD5F;
+  font-family: 'Oswald';
+}
+
+a {
+  color: #33CD5F;
+}
+
+/*NavBar Styling in Header & Footer */
+
+.navbar {
+  background-color: #3F4347;
+  border-color: #3F4347;
+  font-family: 'Oswald';
+}
+
+/*Thumbnail Cards Collection Styling*/
+
+.cards {
+  background-color: #3F4347 !important;
+  border-color: #3F4347 !important;
+  color: #33CD5F !important;
+}
+
+.btn-success {
+  border: 2px;
+  background-color: #33CD5F !important;
+  color: #24292E !important;
+  font-weight: bold !important;
+}
+
+.btn {
+  font-weight: bold !important;
+}
+
+.thumbnail img {
+  max-height: 340px;
+  max-width: 340px;
+}
+
+.item-name {
+  font-weight: bold;
+}
+
+.item-price {
+  font-weight: 900;
+  color: #33CD5F;
+}
+
+.btn-warning {
+  font-weight: bold !important;
+}
+
+/*Stock Page Styling*/
+ .th {
+   font-size: 16px;
+ }
+
+ /*Stock Edit Page Styling*/
+ input {
+   background-color: #3F4347;
+   border-color: #3F4347;
+   border-radius: 5px;
+   border: 0px;
+ }
+
+ .table, .table-bordered {
+   border-color: #3F4347 !important;
+ }
+
+
+/*Item Purchase Page Styling*/
+.thumbnail {
+  color: #33CD5F !important;
+  background-color: #33CD5F;
+  border-color: #3F4347;
+}
+
+.caption {
+  color: #33CD5F;
+}
+
+.purchase-quantity {
+  color: #33CD5F;
+}
+
+.item-image {
+  max-height: 300px;
+  max-width: 300px;
+}
+
+/*Individual Stock Item Edit Page*/
+.inputs {
+  float: right;
+  color: #fff;
+  font-weight: 900;
+}
+
+h4 {
+  font-weight: normal;
+}

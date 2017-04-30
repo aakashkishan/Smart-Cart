@@ -1,0 +1,45 @@
+{{!--Include the Header Partial--}}
+{{> header}}
+
+<h1>{{title}}</h1>
+
+<div class="container">
+    <h3>Purchase-Bill</h3>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>SERIAL NO.</th>
+                <th>ITEM-NAME</th>
+                <th>EXPIRY-DATE</th>
+                <th>QUANTITY-PURCHASED</th>
+                <th>CUMMULATIVE-PRICE</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each purchase}}
+            <tr>
+                <td>{{@index}}</td>
+                <td>{{item_name}}</td>
+                <td>{{expiry_date}}</td>
+                <td>{{quantity}} {{quantity_type}}</td>
+                <td>{{item_price}} Rupees.</td>
+            </tr>
+            {{/each}}
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>TOTAL:</td>
+                <td>{{total_price}} Rupees.</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="clearfix">
+        <div class="pull-right">
+            <p>TAX: 5% of {{total_price}} Rupees.</p>
+            <h3>FINAL PRICE: {{final_price}} Rupees.</h3>
+        </div>
+        <div class="pull-left">
+            <a role="button" class="btn btn-primary" href="/index">PRINT BILL</a>
+        </div>
+    </div>

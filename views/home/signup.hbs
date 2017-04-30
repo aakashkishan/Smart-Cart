@@ -1,0 +1,46 @@
+<h1>{{title}}</h1>
+
+<h3>Administrator Sign Up Form</h3>
+
+<div class="col-sm-9 col-md-9">
+
+<form action="/signup" method="POST" >
+  <div class="imgcontainer pull-left">
+    <img src="{{profile_pic}}" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+
+    <label><b>First Name: </b></label>
+    <input type="text" placeholder="Enter Username" name="firstname" required>
+
+    <br>
+
+    <label><b>Last Name: </b></label>
+    <input type="text" placeholder="Enter Username" name="lastname" required>
+
+    <br>
+
+    <label><b>Username: </b></label>
+    <input type="text" placeholder="Enter Username" name="username" required>
+
+    <br>
+
+    <label><b>Password: </b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+    
+    <br>
+
+    <label><b>Profile Image URL: </b></label>
+    <input type="text" placeholder="Enter Username" name="imageURL" value="https://s-media-cache-ak0.pinimg.com/originals/b1/bb/ec/b1bbec499a0d66e5403480e8cda1bcbe.png">
+    <br>
+    <button type="submit" class="btn btn-success">Sign Up</button>
+  </div>
+
+  <div class="container">
+    <a href="/">Return to Login?</a>
+    <a href= "/" class="btn btn-primary">Login</a>
+  </div>
+</form>
+
+</div>

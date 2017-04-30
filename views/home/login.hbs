@@ -1,0 +1,26 @@
+<h1>{{title}}<h1>
+
+<h2>Administrator Login Form</h2>
+
+<form action="/login" method="POST">
+  <div class="imgcontainer">
+    <img src="{{profile_pic}}" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" required>
+
+    <br>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+        
+    <button type="submit" class="btn btn-success">Login</button>
+  </div>
+
+  <div class="container">
+    <a href="/signup">Have to Register?</a>
+    <a href="/signup" class="btn btn-primary">Sign Up</a>
+  </div>
+</form>

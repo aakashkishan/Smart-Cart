@@ -1,0 +1,23 @@
+{{!--Include the Header Partial--}}
+{{> header}}
+
+<h1>{{title}}</h1>
+
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+            <img src="{{imageURL}}" alt="Image Not Found" class="item-image img-responsive" style="max-height: 350px;">
+            <div class="caption">
+                <h3>{{name}}</h3>
+                <p class="description">{{description}}</p>
+                <form method="POST" action="/index">
+                    QUANTITY:
+                    <input class="purchase-quantity" type="number" name="quantity" value="0" min="0">
+                    <div class="clearfix">
+                        <div class="price pull-left">PRICE: ${{price}} Rupees</div>
+                            <button type="submit" class="btn btn-primary pull-right">Add to Cart</button>
+                    </div>
+                    <a href="/index" class="btn btn-danger">INDEX PAGE</a>
+                </form>
+            </div>
+        </div>
+    </div>

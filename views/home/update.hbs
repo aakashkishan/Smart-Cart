@@ -1,0 +1,59 @@
+{{!--Include the Header Partial--}}
+{{> header}}
+
+<h1>{{title}}</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9 col-md-9">
+            <div class="thumbnail">
+                <img src="{{imageURL}}" alt="Image Not Found" class="item-image img-responsive pull-left" style="max-height: 350px;">
+
+                <div class="caption">
+                    <h2> Current Info </h2>
+                    <h4>{{name}}</h4>
+                    {{description}}
+                    <p>
+                        QUANTITY: {{stock_quantity}} {{quantity_type}}<br>
+                        PRICE: {{price}} Rupees / {{purchase_quantity}} {{quantity_type}}
+                    </p>                       
+                        <div class="clearfix">
+
+                            <h2> Edit Info </h2>
+
+                            {{!--Editable Info Here--}}
+                            <div class="pull-left inputs">
+                                <form method="POST" action="/admin/stock">
+                                <table>
+                                    <tr>
+                                        <td>ITEM-NAME: </td>
+                                        <td><input type="text" name="name" value="{{name}}"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>STOCK-QUANTITY: </td>
+                                        <td><input type="number" name="stock_quantity" value="{{stock_quantity}}"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>ITEM-PRICE: </td>
+                                        <td><input type="number" name="item_price" value="{{price}}"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>EXPIRY-DATE: </td>
+                                        <td><input type="text" name="expiry_date" value="{{expiry_date}}">
+                                    </td>
+                                    <tr>
+                                        <td>IMAGE-URL: </td>
+                                        <td><input type="url" name="imageURL" value="{{imageURL}}"></td>
+                                    </tr>
+                                <table>
+                                <button type="submit" class="btn btn-primary">EDIT</button>
+                                <a href="/admin/stock" class="btn btn-danger">STOCK PAGE</a>
+                                </form>    
+                            </div> 
+
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

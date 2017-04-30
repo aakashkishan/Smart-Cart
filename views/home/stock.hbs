@@ -1,0 +1,53 @@
+{{!--Include the Header Partial--}}
+{{> header}}
+
+<h1>{{title}}</h1>
+
+<div class="container">
+    <table class="table table-stripped">
+        <thead>
+            <tr>
+                <th>Item-Name</th>
+                <th>Stock-Quantity</th>
+                <th>Purchase-Quantity</th>
+                <th>Price</th>
+                <th>Expiry-Date</th>
+                <th>Image</th>
+                <th>EDIT</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each items}}
+            <tr>
+                <td><h4>{{name}}</h4></td>
+                <td><h4>{{stock_quantity}}</h4></td>
+                <td><h4>{{purchase_quantity}}</h4></td>
+                <td><h4>{{item_price}} Rupees.</h4></td>
+                <td><h4>{{expiry_date}}</h4></td>
+                <td><img src="{{imageURL}}" style="max-height: 50px;"></td>
+                <td><h4><a href="/admin/edit/{{id}}" class="glyphicon glyphicon-pencil"></h4></td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+
+    <div class="pull-right">
+        <a href="/admin/edit-stock" class="btn btn-primary">Edit Stock</a>
+    </div>
+    {{!--<ul class="list-group">
+        {{#each items}}
+        <a class="list-group-item" href="#">
+            <div class="pull-left">
+                <h4 class="list-group-item-heading">{{this}}</h4>
+                <p class="list-group-item-text">{{this.description}}</p>
+                <div class="pull-left">
+                    <span>QUANTITY: {{this.stock_quantity}}</span>
+                </div>
+                <div class="pull-right">
+                    <img class="img-responsive" src="{{this.imageURL}}" style="max-height: 50px">
+                </div>
+            </div>
+        </a>
+        {{/each}}
+    </ul>--}}
+</div>

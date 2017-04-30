@@ -1,0 +1,38 @@
+[
+    {
+        "id": "110ec58a-a0f2-4ac4-8393-c866d813b8d1",
+        "name": "Carrot",
+        "description": "It is an underground plant grown organiv=cally without the use of fertilizers and pesticides.",
+        "item_price": 14,
+        "purchase_quantity": 0,
+        "stock_quantity": 120,
+        "expiry_date": "06/06/2017",
+        "imageURL": "http://www.kalahandi.info/wp-content/uploads/2016/05/sorry-image-not-available.png",
+        "quantity_type": "kgs",
+        "purchased": 0
+    },
+    {
+        "id": "6c84fb90-12c4-11e1-840d-7b25c5ee775a",
+        "name": "Water Melon",
+        "description": "It is an Organically grown juicy creeper which quenches the thirst.",
+        "item_price": 10,
+        "purchase_quantity": 0,
+        "stock_quantity": 70,
+        "expiry_date": "06/06/2017",
+        "imageURL": "https://sc02.alicdn.com/kf/UT8W_44XN4XXXagOFbXA/Fresh-watermelons.jpg",
+        "quantity_type": "kgs",
+        "purchased": 0
+    },
+    {
+        "id": "710b962e-041c-11e1-9234-0123456789ab",
+        "name": "Grapes",
+        "description": "It is an Organically grown climber which is consumed in small doses.",
+        "item_price": 6,
+        "purchase_quantity": 0,
+        "stock_quantity": 100,
+        "expiry_date": "06/06/2017",
+        "imageURL": "https://4.imimg.com/data4/MP/SS/MY-12767951/fresh-grapes-250x250.jpg",
+        "quantity_type": "kgs",
+        "purchased": 0
+    }
+]

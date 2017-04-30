@@ -1,0 +1,21 @@
+{
+  "name": "ngsmartcart",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "express": "~4.15.2",
+    "express-handlebars": "^3.0.0",
+    "hbs": "~4.0.1",
+    "mongoose": "^4.9.6",
+    "morgan": "~1.8.1",
+    "node-uuid": "^1.4.8",
+    "serve-favicon": "~2.4.2"
+  }
+}

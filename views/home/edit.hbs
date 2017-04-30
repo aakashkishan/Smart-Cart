@@ -1,0 +1,56 @@
+{{!--Include the Header Partial--}}
+{{> header}}
+
+<h1>{{title}}</h1>
+<div class="container">
+
+    <table class="table table-responsive">
+        <thead>
+            <tr>
+                <th>ITEM_NAME</th>
+                <th>DESCRIPTION</th>
+                <th>IMAGE_URL</th>
+                <th>STOCK-QUANTITY</th>
+                <th>EXPIRY-DATE</th>
+                <th>QUANTITY-TYPE</th>
+                <th>ITEM_PRICE</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            {{!--Add Stock--}}
+            <tr>
+                <form method="POST" action="/admin/edit-stock">
+                <td><input name="item_name" type="text" value="item_name" required></td>
+                <td><input name="description" type="text" value="description"></td>
+                <td><input name="img_url" type="url" value="imageURL"></td>
+                <td><input name="quantity" type="number" placeholder="stock-quantity" min="0" required></td>
+                <td><input name="exp_date" type="text" plceholder="expiry-date" required></td>
+                <td><input name="qty_type" type="text" value="quantity-type"></td>
+                <td><input name="price" type="number" placeholder="item_price" required></td>
+                <button type="submit" class="btn btn-primary pull-left">Add Stock</button>
+                </form>
+            </tr>
+
+            {{!--Show Stock--}}
+            {{#each items}}
+            <tr>
+                <td>{{name}}</td>
+                <td>{{description}}</td>
+                <td><img src="{{imageURL}}" style="max-height: 50px;"></td>
+                <td>{{stock_quantity}}</td>
+                <td>{{expiry_date}}</td>
+                <td>{{quantity_type}}</td>
+                <td>{{item_price}} Rupees. / {{quantity_type}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+
+    </table>
+
+
+
+</div>
+
+<script src="/javascripts/index.js"></script>
